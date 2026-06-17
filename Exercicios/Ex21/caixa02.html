@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            margin: 5px;
+            padding: 10px;
+        }
+        nav{
+            background-color: gray;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            padding-right: 20px;
+            font-weight: bold;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+        }
+        main > section{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        section > aside{
+            background-color: rgb(158, 158, 158);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <Nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </Nav>
+    </header>
+    <Main>
+        <p>Esporte Politica Tecnologia</p>
+        <Section>
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis maxime perspiciatis vel tempora? Officiis assumenda voluptatibus consequatur atque facilis tempora amet ullam veritatis ab, soluta ipsam accusantium totam, voluptatum reiciendis.</p>
+            </article>
+            <aside>
+            <p>Artigo escrito por José da Silva</p>
+            </aside>
+        </Section>
+    </Main>
+    <footer>
+        <p>Desenvovido por Vinicius Yamakami</p>
+    </footer>
+</html>

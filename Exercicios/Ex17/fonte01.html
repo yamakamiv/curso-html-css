@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medida absolutas
+            cm, mm, in, px, (pt, pc) -> Tipografia de papel não utilizar
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            Preferir usar em pois por ser uma medida relativa ela se adapta a qualquer tamanho de tela
+            */
+            font-size: 1em;
+            font-weight: normal;
+            /*
+            lighter normal bold bolder
+            100-900
+            Podemos usar estas opções desde que a font family tenha a opção
+            */
+            font-style: italic;
+            
+            
+        }
+        h1{
+            font: italic bolder 3em serif;
+            /*
+            shorthand font
+            -font-style -> font-weight -> font-size ->font-family
+            */
+        }
+        h2{
+            font: bold 2em Serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus hic similique id deleniti magni quas suscipit minus vitae eligendi dicta, at omnis cupiditate maiores molestias corrupti voluptate doloremque delectus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam similique totam earum, quam iste tempore voluptatum. Obcaecati ducimus commodi possimus et, perspiciatis consequatur tempora eaque saepe velit omnis culpa!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illo esse facere ut optio. Doloremque enim sint optio maxime laudantium. Explicabo voluptatem, vero accusamus amet perspiciatis dolore soluta quod nulla?</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates quasi perferendis veniam reprehenderit, minima in reiciendis, necessitatibus est hic mollitia ex, blanditiis obcaecati. Eos eius eum culpa fugiat magnam harum!</p>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 11</title>
+    <!--
+    Centralização de div
+    Observar que o astronauta sempre estará no centro da imagem
+    definir sempre uma altura da box maior e definir altura e largura em px da imagem menor caso não faça isso as imagens não iram aparecer.
+    -->
+    <style>
+        *{
+            margin: 0;
+        }
+
+        #espaço{
+            background-image: url(imagens/espaco.jpg);
+            background-size: 100% 100%;
+
+            height: 100vh;
+            position: relative;
+        }
+        #astronauta{
+            background-image: url(imagens/astronauta.png);
+            height: 500px;
+            width: 500px;
+
+            position: absolute;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="espaço">
+        <div id="astronauta">
+
+        </div>
+    </div>
+</body>
+</html>
