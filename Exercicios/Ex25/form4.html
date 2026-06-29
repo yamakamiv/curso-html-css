@@ -24,7 +24,114 @@
 	</p>
 	<!--Para envios de arquivo, utilizando o type="file" o method do form deve estar em post -->
 
+	<p>
+		<label for="iest">Estado</label>
+		<select name="estado" id="iest">
+			
+			<option value="" select>--- Escolha ---</option>
+			<optgroup label="Região Norte">
+				<option value="AC">Acre</option>
+				<option value="AP">Amapá</option>
+				<option value="AM">Amazonas</option>
+				<option value="PA">Pará</option>
+				<option value="RO">Rondônia</option>
+				<option value="RR">Roraima</option>
+				<option value="To">Tocantins</option>
+			</optgroup>
+			
+			<optgroup label="Região Nordeste">
+				<option value="AL">Alagoas</option>
+				<option value="BA">Bahia</option>
+				<option value="CE">Ceará</option>
+				<option value="MA">Maranhão</option>
+				<option value="PB">Paraíba</option>
+				<option value="PE">Pernanbuco</option>
+				<option value="PI">Piauí</option>
+				<option value="RN">Rio Grande do Norte</option>
+				<option value="SE">Sergipe</option>
+			</optgroup>
 
+			<optgroup label="Região Centro-Oeste">
+				<option value="DF">Distrito Federal</option>
+				<option value="GO">Goiás</option>
+				<option value="MT">Mato Grosso</option>
+				<option value="MS">Mato Grosso do Sul</option>
+			</optgroup>
+
+			<optgroup label="Região Sudeste">
+				<option value="ES">Espirito Santo</option>
+				<option value="MG">Minas Gerais</option>
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="SP">São Paulo</option>
+			</optgroup>
+
+			<optgroup label="Região Sul">
+				<option value="PR">Paraná</option>
+				<option value="RS">Rio Grande do Sul</option>
+				<option value="SC">Santa Catarina</option>
+			</optgroup>
+		</select>
+	</P>
+
+	<p>
+		<label for="iprof">Profissão: </label>
+		<input type="text" name="prof" id="iprof" list="lstprof">
+		<datalist id="lstprof">
+			<option>Administrador</option>
+			<option>Contador</option>
+			<option>Desenvolvedror</option>
+			<option>Professor</option>
+		</datalist>
+
+	</p>
+
+	<p>
+		<label for="imsg">Mensagem: </label><br>
+		<textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva sua mensagem aqui"></textarea>
+	</p>
+
+	<p>
+		<label for="in1">Número 1: </label>
+		<input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+	</p>
+
+	<p>
+		<label for="in2">Número 2: </label>
+		<input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+	</p>
+
+	<p>
+		<label for="isoma">Soma: </label>
+		<output name="soma" id="isoma">0</output>
+	</p>
+
+	<p>
+		<label>Número: </label>
+		<input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+		<output id="ival">5</output>
+	</p>
+
+	<p>
+		<label>Em que ano você nasceu? </label>
+		<input type="number" name="ano" id="iano" min="1900" max="2026" oninput="calcIdade()">
+	</p>
+
+	<p>
+		<label for="iidade">Sua idade é: </label>
+		<output id="iidade">0</output>
+	</p>
+
+	<p>
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Limpar">
+	</p>
 	</form>
+
+	<script>
+		function calcIdade() {
+			let atual = new Date().getFullYear()
+			iidade.innerHTML = Number(atual) - Number(iano.value)
+}
+	</script>
 </body>
 </html>
