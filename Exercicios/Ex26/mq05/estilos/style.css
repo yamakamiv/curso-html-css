@@ -30,8 +30,8 @@ header  li{
 }
 
 li:hover{
-    background-color: lightgrey;
-    transition-duration: 0.5s;
+    background-color: grey;
+    transition-duration: 0.8s;
 }
 
 header a{
@@ -39,7 +39,8 @@ header a{
     color: white;
 }
 
-article{
+main{
+    width: 90vw;
     padding: 5px;
     background-color: white;
     display: block;
@@ -50,11 +51,12 @@ article{
 }
 
 article h2{
-    padding: 5px;
+    padding-bottom: 20px;
 }
 
 article p{
     line-height: 1.2em;
-    margin: 10px;
+    margin-bottom: 10px;
     text-align: justify;
+    text-indent: 20px;
 }
