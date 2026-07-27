@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conteudo Flexivel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -11,13 +12,17 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi autem dolor distinctio unde. Nesciunt nostrum nemo dolorum excepturi enim distinctio nobis consequuntur provident commodi ullam et impedit, rem vero?</p>
     </header>
     <main>
-        <article>
-            <div>
+        <section class="invertido">
+            <div class="texto">
                 <h2>Elemento Media->Text</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta atque, quis debitis laborum blanditiis, voluptate ullam quibusdam eveniet magnam dolore totam obcaecati cumque tempora. Hic possimus reiciendis eligendi delectus ratione? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis eius voluptatibus provident officia vel perspiciatis magni error eligendi odit modi, tempore dolore placeat, maiores incidunt similique in alias, earum voluptatem.</p>
             </div>
-            <img src="site.png" alt="">
-            <div>
+            <div class="midia">
+                <img src="site.png" alt="">
+            </div>
+        </section>
+        <section class="normal">
+            <div class="texto">
                 <h2>Elemento Text->Media</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla magnam nisi consectetur voluptate nostrum distinctio libero modi nesciunt? Laudantium vel ex exercitationem, veniam rem enim aspernatur ipsa totam quae error?
@@ -26,8 +31,14 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolorem error praesentium architecto corporis reiciendis harum sed, deserunt voluptate voluptas, omnis quaerat, aspernatur minima libero voluptatibus eligendi. Exercitationem, tempora sunt.
                 </p>
             </div>
-            <div><iframe width="560" height="315" src="https://www.youtube.com/embed/E0K6mAhxSkU?si=WH-0w3F1W5l-FKPa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-        </article>
+            <div class="midia">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/E0K6mAhxSkU?si=WH-0w3F1W5l-FKPa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
     </main>
+    <footer>
+            <h2>Conteúdo normal</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quod non sunt maiores accusamus. Unde consectetur earum nihil quasi non, fugit dignissimos inventore placeat quod sapiente porro, facere maxime. Atque.</p>
+        </footer>
 </body>
 </html>
